@@ -13,11 +13,3 @@ useEffect(() => {
       console.error(error);
     });
 }, []);
-
-{articles.map(article => (
-  <View key={article.url}>
-    <Text>{article.title}</Text>
-    <Text>{article.description}</Text>
-    <Image source={{ uri: article.urlToImage }} style={{ width: 200, height: 200 }} />
-  </View>
-))}
